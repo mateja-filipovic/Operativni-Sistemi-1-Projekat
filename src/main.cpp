@@ -15,10 +15,10 @@ int main(int argc, char* argv[]){
   int ret = userMain(argc, argv);
   restore();
 
-  //delete idle;
-  //delete allPCBs;
-  //delete allSems;
-  //delete running;
+  delete idle;
+  delete allPCBs;
+  delete allSems;
+  delete running;
  
   return ret;
 }

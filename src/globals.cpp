@@ -144,8 +144,6 @@ void unlock(){
 		dispatch();
 }
 
-//extern int userMain(int argc, char* argv[]);
-
 void dispatch(){
 	asm cli;
 	zahtevana_promena_konteksta = 1;
