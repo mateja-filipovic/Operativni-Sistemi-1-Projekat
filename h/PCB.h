@@ -22,7 +22,6 @@ public:
 	int uniqueID;
 	static int nextID;
 
-	KernelSem* blockedOn;
 	int semStatus;
 
 	PCB(StackSize stSz = defaultStackSize, Time tSl = defaultTimeSlice, Thread* myTh = 0);

@@ -67,7 +67,6 @@ void PCB::wrapper(){
 }
 
 void PCB::wakeUp(){
-	//cout << "pozivalac " << running->uniqueID << " je probudio " << uniqueID << endl;
 	blockedFLAG = 0;
 	readyFLAG = 1;
 	Scheduler::put(this);
