@@ -54,8 +54,6 @@ PCB* List::findPCBById(int uniqueID){
 	Node* temp = head;
 	while(temp->pcb->uniqueID != uniqueID && temp != 0)
 		temp = temp->next;
-	if(temp == 0)
-		cout << "Greska: PCB nije pronadjen pomocu PCBAT fje" << endl;
 	return temp->pcb;
 }
 

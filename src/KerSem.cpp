@@ -106,11 +106,6 @@ void KernelSem::updateSem(){
 }
 
 KernelSem::~KernelSem(){
-	//da li je uopste potrebno buditi sve niti??
-	//probudi sve niti
-	/*while(val < 0){
-		signal();
-	}*/
 	//obrisi red i obrisi ovaj semafor iz globalne liste
 	delete blockedQ;
 	allSems->remove(this);

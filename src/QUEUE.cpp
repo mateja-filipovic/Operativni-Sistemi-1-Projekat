@@ -26,7 +26,6 @@ void Queue::addToQueue(PCB* newPcb, int sleepInterval) {
 PCB* Queue::getFromQueue() {
 	if (head == 0)
 		return 0;
-	//cout << "uzeta vrednost " << head->pcb->uniqueID;
 	PCB* retPcb = head->pcb;
 	QNode* temp = head;
 	head = head->next;
@@ -53,10 +52,8 @@ void Queue::removeFromQueue(PCB* toRemove){
    	 previous = current;
    	 current = current->next;
     }
-    if(current == tail->next){
-    	//cout << "reee " << endl;
+    if(current == tail->next)
     	return;
-    }
     if(previous == 0){
    	 head = current->next;
    	 delete current;

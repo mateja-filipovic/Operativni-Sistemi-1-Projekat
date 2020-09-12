@@ -70,7 +70,7 @@ void interrupt timer(){	// prekidna rutina
 	// poziv stare prekidne rutine koja se
      // nalazila na 08h, a sad je na 60h
      // poziva se samo kada nije zahtevana promena
-     // konteksta – tako se da se stara
+     // konteksta, tako se da se stara
      // rutina poziva samo kada je stvarno doslo do prekida
 if(!zahtevana_promena_konteksta) asm int 60h;
 
