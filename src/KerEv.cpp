@@ -54,6 +54,5 @@ void KernelEv::signal(){
 }
 
 KernelEv::~KernelEv(){
-	//da li treba ovo dodavati??
-	//IVTEntry::ivTable[ivtNo]->myEvent = 0;
+	IVTEntry::ivTable[ivtNo]->myEvent = 0;
 }
