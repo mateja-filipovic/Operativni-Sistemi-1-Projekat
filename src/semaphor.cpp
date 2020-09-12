@@ -18,7 +18,7 @@ int Semaphore::signal(int n){
 
 int Semaphore::val () const{
 	return myImpl->value();
-}  // Returns the current value of the semaphore
+}
 
 Semaphore::~Semaphore (){
 	lock();
